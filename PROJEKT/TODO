@@ -1,0 +1,23 @@
+- Make sprites use only ONE texture  ------DONE
+- Create Player sprite appearing at the '!' ------DONE
+- Player beeing a sprite is able to do much more, do the moving-mechanism --DONE
+- Create Player wants to move it will encounter the "breakIn" function in tile abstract class pop up --DONE
+- Tiles inherit from Tile Abstract Class ------DONE
+-------------------
+- Movement is not so fast, reduce its speed __ DONE
+- If you want to push a rock (with free space behind it),
+ your character changes texture and after 0.5s, 
+ if the key is still pressed you and the rock change places __ DONE
+- Introduce Diamonds
+- Polish the textures, make bidirectional pushing movement, __ DONE
+------------------
+- Rock falls down if it's support disappear VERTICALLY __ DONE
+- Rock falls down if it's on the edge then it slips (after that normal vertical move continues) __ DONE
+- If rock falls down it issues events on the ones up VERTICALLY __ DONE
+- If rock falls on the surface it checks whether it can slip horizontally further down //avalanche __ DONE
+-----------------
+- If rock hits the player from above, player changes texture to a grave, 1 life is gone, board returns to start state __ DONE
+- For every diamond taken score += 500, score accumulated in the level is lost after death
+- Add timer to interface
+- Add Chest to the board __ DONE
+- BoardManager class interface

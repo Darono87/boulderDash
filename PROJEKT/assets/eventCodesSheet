@@ -1,0 +1,20 @@
+
+1XX - Events considering moves
+101 - Push rock is done
+102 - Empty space created below [event for rocks]
+103 - Empty space created on the edge [event for rocks] TO LEFT
+104 - -,,- TO RIGHT
+
+2XX - events considering hitting something
+201 hit by a rock
+
+3XX - Lava
+301 Lava Movement
+
+Event List will be attached to the Application
+Each frame it will investigate the delays and fire the events if they satisfty fire conditions
+Event consists of -> Timer to fire, Pointer to EventableSprite, string Data, checkFunction to check whether to fire event or not
+PressedDepEvent -> inherit from Event, checkFunction checks also whether the key is pressed all the time
+
+new Class - EventableSprite instead of Tile. Player and tiles inherit from this.
+consumeEvent(EventData) consumes event deciding what further actions to take
